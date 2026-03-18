@@ -110,7 +110,7 @@ const DashboardPreview = () => {
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground mb-1">
-                    Your Daily Brief — March 18, 2026
+                    Your Daily Brief - March 18, 2026
                   </p>
                   <h3 className="text-2xl md:text-3xl font-bold text-foreground">
                     Today's <em className="font-serif italic">priorities.</em>
