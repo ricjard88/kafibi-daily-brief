@@ -24,7 +24,7 @@ const EarlyAccess = () => {
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
           Early Access
         </p>
-        <h2 className="font-display text-4xl md:text-5xl italic tracking-tight text-foreground mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
           Join the first cohort
         </h2>
         <p className="text-lg leading-relaxed text-muted-foreground mb-12">
