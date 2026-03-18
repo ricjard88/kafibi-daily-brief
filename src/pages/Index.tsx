@@ -1,8 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import DashboardPreview from "@/components/DashboardPreview";
-import DailyBrief from "@/components/DailyBrief";
 import HowItWorks from "@/components/HowItWorks";
+import DashboardPreview from "@/components/DashboardPreview";
 import WhyRetailers from "@/components/WhyRetailers";
 import WhoItsFor from "@/components/WhoItsFor";
 import EarlyAccess from "@/components/EarlyAccess";
@@ -13,9 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <DashboardPreview />
-      <DailyBrief />
       <HowItWorks />
+      <DashboardPreview />
       <WhyRetailers />
       <WhoItsFor />
       <EarlyAccess />
