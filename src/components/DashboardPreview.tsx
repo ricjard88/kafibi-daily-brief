@@ -5,7 +5,7 @@ const actions = [
     label: "INVENTORY ALERT",
     labelColor: "text-destructive",
     dotColor: "bg-destructive",
-    text: 'Rush PO for "Heritage Denim" — stock will deplete by Thursday.',
+    text: 'Rush PO for "Heritage Denim" stock will deplete by Thursday.',
     action: "Create PO",
     actionFilled: true,
   },
