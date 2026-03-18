@@ -13,7 +13,7 @@ const EarlyAccess = () => {
   };
 
   return (
-    <section id="early-access" className="py-16 px-6">
+    <section id="early-access" className="py-12 px-6 bg-primary/5">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,19 +21,19 @@ const EarlyAccess = () => {
         transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
         className="max-w-xl mx-auto text-center"
       >
-        <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
+        <p className="text-xs font-mono uppercase tracking-[0.2em] text-accent mb-3">
           Early Access
         </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
           Join the first cohort
         </h2>
-        <p className="text-lg leading-relaxed text-muted-foreground mb-12">
+        <p className="text-lg leading-relaxed text-muted-foreground mb-8">
           We're working closely with a small group of operators to shape Kafibi.
           Leave your email if you'd like to be considered.
         </p>
         {submitted ? (
-          <div className="border border-kafibi-green p-8">
-            <p className="text-base font-medium text-kafibi-green">
+          <div className="border-2 border-secondary p-8">
+            <p className="text-base font-medium text-secondary">
               Thank you. We'll be in touch soon.
             </p>
           </div>
@@ -45,7 +45,7 @@ const EarlyAccess = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@company.com"
               required
-              className="flex-1 border border-border border-r-0 px-5 py-4 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-foreground"
+              className="flex-1 border-2 border-primary/20 border-r-0 px-5 py-4 text-sm bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
             />
             <button
               type="submit"
