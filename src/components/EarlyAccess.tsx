@@ -13,7 +13,7 @@ const EarlyAccess = () => {
   };
 
   return (
-    <section id="early-access" className="py-32 px-6">
+    <section id="early-access" className="py-16 px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
