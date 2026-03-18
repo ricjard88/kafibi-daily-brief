@@ -20,12 +20,12 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-32 px-6 border-b border-border">
+    <section className="py-16 px-6 border-b border-border">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
           Process
         </p>
-        <h2 className="font-display text-4xl md:text-5xl italic tracking-tight text-foreground mb-20">
+        <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-12">
           How it works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border">
