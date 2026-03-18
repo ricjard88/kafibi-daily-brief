@@ -13,7 +13,7 @@ const EarlyAccess = () => {
   };
 
   return (
-    <section id="early-access" className="py-32 px-6">
+    <section id="early-access" className="py-16 px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const EarlyAccess = () => {
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
           Early Access
         </p>
-        <h2 className="font-display text-4xl md:text-5xl italic tracking-tight text-foreground mb-6">
+        <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
           Join the first cohort
         </h2>
         <p className="text-lg leading-relaxed text-muted-foreground mb-12">
@@ -49,7 +49,7 @@ const EarlyAccess = () => {
             />
             <button
               type="submit"
-              className="bg-foreground text-background px-8 py-4 text-sm font-medium tracking-[0.1em] uppercase hover:translate-y-[1px] transition-transform shrink-0"
+              className="bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold tracking-[0.1em] uppercase hover:bg-primary/90 transition-colors shrink-0"
             >
               Request Invite
             </button>

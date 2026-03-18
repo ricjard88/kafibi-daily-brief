@@ -38,12 +38,12 @@ const itemVariants = {
 
 const DailyBrief = () => {
   return (
-    <section className="py-32 px-6 border-b border-border">
+    <section className="py-16 px-6 border-b border-border">
       <div className="max-w-2xl mx-auto">
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
           Your Daily Brief — March 18, 2026
         </p>
-        <h2 className="font-display text-3xl md:text-4xl italic tracking-tight text-foreground mb-12">
+        <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-10">
           Today's priorities
         </h2>
         <motion.div
