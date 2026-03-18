@@ -57,3 +57,14 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 }
+
+/* Gradient accent bar */
+.gradient-bar {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    hsl(280 24% 34%) 0%,
+    hsl(153 14% 33%) 50%,
+    hsl(225 5% 40%) 100%
+  );
+}

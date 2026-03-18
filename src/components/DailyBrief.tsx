@@ -2,19 +2,19 @@ import { motion } from "framer-motion";
 
 const briefItems = [
   {
-    color: "bg-kafibi-purple",
+    borderColor: "border-l-primary",
     label: "Inventory Alert",
     text: 'Rush PO for "Heritage Denim" — stock will deplete by Thursday.',
     action: "Create PO",
   },
   {
-    color: "bg-kafibi-green",
+    borderColor: "border-l-secondary",
     label: "Rebalance",
     text: "Move 24 units of Coastal Tee from Warehouse → Store #2. Selling 3× faster there.",
     action: "Approve Move",
   },
   {
-    color: "bg-kafibi-slate",
+    borderColor: "border-l-accent",
     label: "Promo Check",
     text: "Weekend promo on Linen Pants is eroding margin. Consider ending 1 day early.",
     action: "Review",
@@ -24,10 +24,7 @@ const briefItems = [
 const containerVariants = {
   hidden: {},
   visible: {
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.3,
-    },
+    transition: { staggerChildren: 0.12, delayChildren: 0.3 },
   },
 };
 
@@ -38,12 +35,12 @@ const itemVariants = {
 
 const DailyBrief = () => {
   return (
-    <section className="py-16 px-6 border-b border-border">
+    <section className="py-12 px-6 border-b border-border">
       <div className="max-w-2xl mx-auto">
-        <p className="text-xs font-mono uppercase tracking-[0.2em] text-kafibi-slate mb-3">
+        <p className="text-xs font-mono uppercase tracking-[0.2em] text-accent mb-3">
           Your Daily Brief — March 18, 2026
         </p>
-        <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-10">
+        <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-8">
           Today's priorities
         </h2>
         <motion.div
@@ -51,22 +48,21 @@ const DailyBrief = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="border border-border"
+          className="bg-primary/5 border border-primary/15 p-1"
         >
           {briefItems.map((item, i) => (
             <motion.div
               key={i}
               variants={itemVariants}
-              className="flex items-start gap-4 p-6 border-b border-border last:border-b-0 hover:bg-muted/50 transition-colors"
+              className={`flex items-start gap-4 p-5 border-l-4 ${item.borderColor} bg-background mb-px last:mb-0`}
             >
-              <div className={`w-2 h-2 mt-2 rounded-full ${item.color} shrink-0`} />
               <div className="flex-1 min-w-0">
-                <p className="font-mono text-[10px] uppercase tracking-widest text-kafibi-slate mb-1">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-accent mb-1">
                   {item.label}
                 </p>
                 <p className="text-base font-medium text-foreground">{item.text}</p>
               </div>
-              <button className="text-xs underline underline-offset-4 font-semibold text-foreground shrink-0 hover:text-kafibi-purple transition-colors">
+              <button className="text-xs font-semibold border border-primary text-primary px-3 py-1.5 shrink-0 hover:bg-primary hover:text-primary-foreground transition-colors">
                 {item.action}
               </button>
             </motion.div>

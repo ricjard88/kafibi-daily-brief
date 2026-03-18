@@ -2,16 +2,34 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-16 px-6 border-b border-border">
+    <section className="pt-32 pb-16 px-6 border-b border-border">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
+        >
+          <span className="inline-block border border-primary/30 text-primary text-xs font-mono uppercase tracking-[0.15em] px-4 py-1.5 mb-6">
+            Predictive Ops for Retail
+          </span>
+        </motion.div>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.19, 1, 0.22, 1] }}
           className="font-display text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-[1.1]"
         >
           Know exactly what to do today to run your shop better.
         </motion.h1>
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: [0.19, 1, 0.22, 1] }}
+          className="mx-auto mt-4 h-1 w-32 origin-left"
+          style={{
+            background: "linear-gradient(90deg, hsl(280 24% 34%), hsl(153 14% 33%))",
+          }}
+        />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

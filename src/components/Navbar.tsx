@@ -1,18 +1,21 @@
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary">
-          Kafibi
-        </span>
-        <a
-          href="#early-access"
-          className="text-xs font-medium tracking-[0.1em] uppercase text-kafibi-purple hover:underline underline-offset-4 transition-colors"
-        >
-          Request Invite
-        </a>
-      </div>
-    </nav>
+    <div className="fixed top-0 left-0 right-0 z-50">
+      <div className="gradient-bar" />
+      <nav className="bg-background border-b-2 border-primary/20">
+        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+          <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary">
+            Kafibi
+          </span>
+          <a
+            href="#early-access"
+            className="text-xs font-semibold tracking-[0.1em] uppercase border border-primary text-primary px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            Request Invite
+          </a>
+        </div>
+      </nav>
+    </div>
   );
 };
 
