@@ -1,11 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import RequestInviteLink from "@/components/RequestInviteLink";
 
 const Navbar = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-  const ctaHref = isHome ? "#early-access" : "/#early-access";
-
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className="gradient-bar" />
@@ -24,12 +21,11 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <a
-              href={ctaHref}
+            <RequestInviteLink
               className="text-xs font-semibold tracking-[0.1em] uppercase border border-primary text-primary px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               Request Invite
-            </a>
+            </RequestInviteLink>
           </div>
         </div>
       </nav>
