@@ -1,23 +1,36 @@
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const ctaHref = isHome ? "#early-access" : "/#early-access";
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className="gradient-bar" />
       <nav className="bg-background border-b-2 border-primary/20">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Kabifi logo" className="h-6 w-auto" />
             <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary">
               Kabifi
             </span>
+          </Link>
+          <div className="flex items-center gap-5">
+            <Link
+              to="/contact"
+              className="hidden text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:text-primary md:block"
+            >
+              Contact
+            </Link>
+            <a
+              href={ctaHref}
+              className="text-xs font-semibold tracking-[0.1em] uppercase border border-primary text-primary px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              Request Invite
+            </a>
           </div>
-          <a
-            href="#early-access"
-            className="text-xs font-semibold tracking-[0.1em] uppercase border border-primary text-primary px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
-          >
-            Request Invite
-          </a>
         </div>
       </nav>
     </div>
