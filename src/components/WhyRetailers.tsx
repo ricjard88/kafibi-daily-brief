@@ -14,7 +14,7 @@ const reasons = [
   {
     borderColor: "border-l-accent",
     title: "Inventory as a live pulse in the business.",
-    text: "Kafibi connects stock levels, sales velocity, and external signals into concrete actions — not more reports to interpret.",
+    text: "Kabifi connects stock levels, sales velocity, and external signals into concrete actions — not more reports to interpret.",
   },
   {
     borderColor: "border-l-secondary",
