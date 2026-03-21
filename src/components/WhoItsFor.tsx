@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const traits = [
-  { label: "1–3 locations", color: "border-l-primary" },
-  { label: "Shopify or similar online store", color: "border-l-secondary" },
-  { label: "Running their own product line alongside other brands", color: "border-l-accent" },
+  { label: "You run one to three locations and your own product line", color: "border-l-primary" },
+  { label: "You're selling through your store, online, or both", color: "border-l-secondary" },
+  { label: "You're making inventory decisions faster than your data can keep up", color: "border-l-accent" },
 ];
 
 const WhoItsFor = () => {
@@ -17,7 +17,7 @@ const WhoItsFor = () => {
           Who it's for
         </h2>
         <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-          Hybrid retailers and emerging CPG brands:
+          If this sounds like you - Kabifi was built for your operation
         </p>
         <motion.div
           initial={{ opacity: 0 }}
